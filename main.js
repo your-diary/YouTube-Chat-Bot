@@ -54,8 +54,8 @@
                     output_string = `${timestamp} [${author}] ${message}`;
                 } else if (chat_type == 'YT-LIVE-CHAT-PAID-MESSAGE-RENDERER') { //super chat
                     timestamp = chat_item[1].childNodes[8].childNodes[3].innerText;
-                    const author = chat_item[1].childNodes[8].childNodes[1].childNodes[1].innerText;
-                    amount = chat_item[1].childNodes[8].childNodes[1].childNodes[3].innerText;
+                    author = chat_item[1].childNodes[8].childNodes[1].childNodes[1].innerText;
+                    const amount = chat_item[1].childNodes[8].childNodes[1].childNodes[3].innerText;
                     message = chat_item[3].innerText;
                     output_string = `${timestamp} [${author}] (${amount}) ${message}`;
                 } else if (chat_type == 'YT-LIVE-CHAT-MEMBERSHIP-ITEM-RENDERER') { //membership registration

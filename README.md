@@ -38,6 +38,18 @@ Demo:
 
 ![demo_of_example_js](misc/demo_example_js.gif)
 
+### `test.js`
+
+This script is similar to `main.js`. The only essential difference is that this script collects chats from a live stream `A` and re-posts them to another live stream `B` while `main.js` collects chats from and re-posts them to the same live stream `A`. Here is the structure.
+
+![structure_of_test_js](misc/fig_test_js.png)
+
+Demo:
+
+| ![demo_of_test_js](misc/demo_test_js.gif) |
+|:--|
+| Demo of `test.js`. Chats are being collected from the right window into a pool `c` once a second. At the same time, once a second, one chat is ramdomly chosen from the latest five entries in `c`, appended with a random emoji, and then re-posted to the left window (another live stream). |
+
 ## Environments
 
 ### Supported OSes
@@ -56,5 +68,5 @@ The scripts are tested on Firefox and Google Chrome.
 
 3. Execute a script in it.
 
-<!-- vim: spell -->
+<!-- vim: set spell -->
 
