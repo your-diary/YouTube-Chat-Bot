@@ -18,6 +18,8 @@ This project was created for the purpose of studying chat bots. Every test is do
 
 ## Files
 
+**Important Notes:** Since `example.js` and `test.js` are just variants of `main.js`, only `main.js` script is actively maintained. The other two scripts may have older implementations.
+
 ### `main.js`
 
 This script does two things asynchronously:

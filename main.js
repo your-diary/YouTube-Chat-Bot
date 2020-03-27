@@ -127,10 +127,18 @@
     }
 
     const timer_id = chat_viewer(sec_to_millisec(1));
-    console.log(timer_id);
 
     const timer_id_2 = parrot_fashion(chat_history, 15, sec_to_millisec(10));
-    console.log(timer_id_2);
+
+    //At least on Firefox, operations rapidly get slower as outputs of console is accumulated.
+    //To avoid this problem, we call `console.clear()` regularly.
+    //(By the way, we don't know why the problem occurs. As you know, one doesn't experience such a problem in a shell (terminal).)
+    function clear_console() {
+        console.clear();
+        console.log("TimerID:", timer_id, timer_id_2, timer_id_3);
+    }
+
+    const timer_id_3 = window.setInterval(clear_console, sec_to_millisec(10));
 
 })();
 
