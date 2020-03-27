@@ -28,29 +28,41 @@ This script does two things asynchronously:
 
 - To post chats every `m` milliseconds whose contents are created using a randomly chosen element from `c`.
 
-See the figure below for the structure.
+**Structure**
 
-![structure_of_main_js](fig/fig_main_js.png)
+| ![structure_of_main_js](fig/fig_main_js.png) |
+| :-- |
 
 ### `example.js`
 
 This script initializes the pool `c` using pre-collected chats (see `chat_list.js`), randomly chooses one chat from the pool every `n` milliseconds, appends a random emoji (see `emoji_list.js`) to it and finally posts the resultant text as a chat.
 
-Demo:
+**Demo**
 
-![demo_of_example_js](fig/demo_example_js.gif)
+| ![demo_of_example_js](fig/demo_example_js.gif) |
+| :-- |
 
 ### `test.js`
 
-This script is similar to `main.js`. The only essential difference is that this script collects chats from a live stream `A` and re-posts them to another live stream `B` while `main.js` collects chats from and re-posts them to the same live stream `A`. Here is the structure.
+This script is similar to `main.js`. The only essential difference is that this script collects chats from a live stream `A` and re-posts them to another live stream `B` while `main.js` collects chats from and re-posts them to the same live stream `A`.
 
-![structure_of_test_js](fig/fig_test_js.png)
+**Structure**
 
-Demo:
+| ![structure_of_test_js](fig/fig_test_js.png) |
+| :-- |
+
+**Demo1**
 
 | ![demo_of_test_js](fig/demo_test_js.gif) |
 |:--|
 | Demo of `test.js`. Chats are being collected from the right window into a pool `c` once a second. At the same time, once a second, one chat is ramdomly chosen from the latest five entries in `c`, appended with a random emoji, and then re-posted to the left window (another live stream). |
+
+**Demo2**
+
+Recently we demonstrated how the bot works, using a live stream. Click the thumbnail below to watch the archive on YouTube. The script used in the stream was essentially the same as `test.js`.
+
+| [![live_demo_of_test_js](fig/live_demo_test_js.png)](https://www.youtube.com/watch?v=z1Lh_bSeVxk) |
+| :-- |
 
 ## Environments
 
