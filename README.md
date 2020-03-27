@@ -30,7 +30,7 @@ This script does two things asynchronously:
 
 See the figure below for the structure.
 
-![structure_of_main_js](misc/fig_main_js.png)
+![structure_of_main_js](fig/fig_main_js.png)
 
 ### `example.js`
 
@@ -38,17 +38,17 @@ This script initializes the pool `c` using pre-collected chats (see `chat_list.j
 
 Demo:
 
-![demo_of_example_js](misc/demo_example_js.gif)
+![demo_of_example_js](fig/demo_example_js.gif)
 
 ### `test.js`
 
 This script is similar to `main.js`. The only essential difference is that this script collects chats from a live stream `A` and re-posts them to another live stream `B` while `main.js` collects chats from and re-posts them to the same live stream `A`. Here is the structure.
 
-![structure_of_test_js](misc/fig_test_js.png)
+![structure_of_test_js](fig/fig_test_js.png)
 
 Demo:
 
-| ![demo_of_test_js](misc/demo_test_js.gif) |
+| ![demo_of_test_js](fig/demo_test_js.gif) |
 |:--|
 | Demo of `test.js`. Chats are being collected from the right window into a pool `c` once a second. At the same time, once a second, one chat is ramdomly chosen from the latest five entries in `c`, appended with a random emoji, and then re-posted to the left window (another live stream). |
 
