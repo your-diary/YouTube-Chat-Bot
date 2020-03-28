@@ -64,6 +64,10 @@ Recently we demonstrated how the bot works, using a live stream. Click the thumb
 | [![live_demo_of_test_js](fig/live_demo_test_js.png)](https://www.youtube.com/watch?v=z1Lh_bSeVxk) |
 | :-- |
 
+### `misc/for_greasemonkey/chat_bot.user.js`
+
+This script is just `main.js` ported for [Greasemonkey](https://www.greasespot.net/). Think hundreds times before you install this script. Disable the script unless you deeply understand what you are doing. Enable the script only when it is really needed. For and only for test purposes, you can safely use the script.
+
 ## Environments
 
 ### Supported OSes
